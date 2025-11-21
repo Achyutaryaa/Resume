@@ -5,200 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Achyutarya Raaz</title>
-    <style>
-        /* Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Times New Roman", serif;
-            line-height: 1.2;
-            background: #f5f5f5;
-            color: #000;
-            padding: 20px;
-            font-size: small;
-        }
-
-        .resume {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 40px;
-            border: 1px solid #ddd;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 0px;
-        }
-
-        header h1 {
-            font-size: 32px;
-            margin-bottom: 5px;
-        }
-
-        header p {
-            font-size: 18px;
-            color: #555;
-        }
-
-        .contact {
-            font-size: 14px;
-            margin-top: 8px;
-        }
-
-        h2 {
-            font-size: 20px;
-            border-bottom: 1px solid #000;
-            margin: 20px 0 10px 0;
-            padding-bottom: 5px;
-        }
-
-        .para {
-            text-align: justify;
-        }
-
-        .item {
-            display: flex;
-            background-color: #ddd;
-            margin-bottom: 5px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .item h3 {
-            width: 30%;
-        }
-
-        .sub-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-left: 20px;
-            flex: 1;
-        }
-
-        .sub-item p:last-child {
-            background-color: #676565;
-            color: #fff;
-            padding: 0 5px;
-            border-radius: 3px;
-        }
-
-        .item h3 {
-            font-size: 16px;
-            margin-bottom: 2px;
-        }
-
-        #experience .item {
-            display: block;
-        }
-
-        ul {
-            margin-left: 20px;
-            list-style: square;
-        }
-
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px 28px;
-            margin-top: 10px;
-        }
-
-        .skills>div {
-            background-color: #ddd;
-            padding: 10px;
-            border-radius: 10px;
-        }
-
-        .skills h3 {
-            font-size: 15px;
-            font-weight: bold;
-            margin-bottom: 4px;
-            color: #222;
-            border-bottom: 2px solid #bbbaba;
-            padding-bottom: 2px;
-        }
-
-        .skills p {
-            font-size: 14px;
-            color: #444;
-            line-height: 1.5;
-        }
-
-        hr {
-            margin: 10px 0;
-            border: none;
-            border-top: 2px solid #000;
-        }
-
-        @media (max-width: 600px) {
-            .item {
-                display: block;
-            }
-
-            .sub-item {
-                margin: 0;
-            }
-
-            .skills {
-                display: block;
-            }
-
-            .skills>div {
-                margin-bottom: 5px;
-
-            }
-        }
-
-        /* ✅ Print-friendly */
-        @media print {
-            body {
-                background: #fff;
-                padding: 0;
-                font-size: 12pt;
-            }
-
-            .resume {
-                border: none;
-                padding: 0;
-                box-shadow: none;
-            }
-
-            /* prevent sections from splitting across pages */
-            section {
-                page-break-inside: avoid;
-                /* legacy support */
-                break-inside: avoid;
-                /* modern */
-                margin-bottom: 20px;
-            }
-
-            section h2 {
-                page-break-after: avoid;
-                break-after: avoid;
-            }
-
-            header {
-                page-break-after: avoid;
-                break-after: avoid;
-            }
-
-            /* optional: avoid page breaks right after lists */
-            ul,
-            li {
-                page-break-inside: avoid;
-            }
-
-            .sub-item p:last-child {
-                color: #000;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -244,23 +51,23 @@
         <!-- Education -->
         <section>
             <h2>Education</h2>
-            <div class="item">
-                <h3>B.Tech (CSE - Cybersecurity)</h3>
-                <div class="sub-item">
+            <div class="edu">
+                <h3>B.Tech (CSE - Cybersecurity):</h3>
+                <div class="sub-edu">
                     <p>Quantum University (2022 – 2026)</p>
                     <p>CGPA: 6.66</p>
                 </div>
             </div>
-            <div class="item">
-                <h3>Intermediate (Science)</h3>
-                <div class="sub-item">
+            <div class="edu">
+                <h3>Intermediate (Science):</h3>
+                <div class="sub-edu">
                     <p>Langat Singh College, Muzaffarpur (2018 – 2020)</p>
                     <p>58.2%</p>
                 </div>
             </div>
-            <div class="item">
-                <h3>Matriculation</h3>
-                <div class="sub-item">
+            <div class="edu">
+                <h3>Matriculation:</h3>
+                <div class="sub-edu">
                     <p>K.D.H. School, Malinagar, Pusa (2016 – 2017)</p>
                     <p>70.8%</p>
                 </div>
@@ -309,7 +116,7 @@
 
                 <div>
                     <h3>Tools & IDEs</h3>
-                    <p>VS Code, IntelliJ IDEA, PyCharm, Nmap, Wireshark, Linux, MS Office, Cisco Packet Tracer</p>
+                    <p>Bash, SSH, cmd, PowerShell, Linux, Nmap, Wireshark, VS Code, Cisco Packet Tracer, IntelliJ IDEA, PyCharm, MS Office</p>
                 </div>
 
                 <div>
@@ -334,13 +141,15 @@
         <section>
             <h2>Certificates</h2>
             <ul>
-                <li>Introduction to Cybersecurity – Cisco Network Academy</li>
-                <li>SQL Injection – EC-Council</li>
-                <li>Database Foundation – Oracle</li>
-                <li>Frontend Web Development – RF Skilling Academy</li>
-                <li>Full Stack Web Development – Internshala</li>
-                <li>Java Complete Course – Udemy</li>
-                <li>Cybersecurity Training – Tech Mahindra Foundation (SIDH)</li>
+                <li><b>Pre Security Learning Path</b> - <i>TryHackMe</i></li>
+                <li><b>Introduction to Cybersecurity</b> – <i>Cisco Network Academy</i></li>
+                <li><b>SQL Injection</b> – <i>EC-Council</i></li>
+                <li><b>Database Foundation</b> – <i>Oracle</i></li>
+                <li><b>Web Development Fundamentals</b> – <i>IBM SkillsBuild</i></li>
+                <li><b>Frontend Web Development</b> – <i>RF Skilling Academy</i></li>
+                <li><b>Full Stack Web Development</b> – <i>Internshala</i></li>
+                <li><b>Java Complete Course</b> – <i>Udemy</i></li>
+                <li><b>Cybersecurity Training</b> – <i>Tech Mahindra Foundation (SIDH)</i></li>
             </ul>
         </section>
 
@@ -348,13 +157,13 @@
         <section id="experience">
             <h2>Internship / Work Experience</h2>
             <div class="item">
-                <h3>Full Stack Web Development (Internshala)</h3>
-                <p>(10/2023 – 12/2023) – Built a Hotel Management System with secure payment, reviews, and complaint
+                <h3>Full Stack Web Development (Internshala) [10/2023 - 12/2023]</h3>
+                <p>– Built a Hotel Management System with secure payment, reviews, and complaint
                     features.</p>
             </div>
             <div class="item">
-                <h3>Tata Cybersecurity Analyst Simulation (Forage)</h3>
-                <p>(08/2025) – Gained IAM expertise, cybersecurity practices, and delivered professional documentation.
+                <h3>Tata Cybersecurity Analyst Simulation (Forage) [08/2025 - 10/2025]</h3>
+                <p>– Gained IAM expertise, cybersecurity practices, and delivered professional documentation.
                 </p>
             </div>
         </section>
