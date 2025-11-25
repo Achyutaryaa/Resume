@@ -189,7 +189,7 @@ hr {
     page-break-inside: avoid;
   }
 
-  .sub-item p:last-child {
+  .sub-edu p:last-child {
     color: #000;
   }
 }
